@@ -268,7 +268,7 @@ write.table(Species_tree_data, file = "Species_tree_gain_loss_dup.txt", row.name
                    label=paste("+",Increase, sep = ""), 
                    hjust = 1.1, vjust = -1),
                size=4, color = "salmon4")+
-    geom_text2(aes(subset=!isTip & is.na(Increase)==FALSE & Increase != 0, 
+    geom_text2(aes(subset=!isTip & is.na(Decrease)==FALSE & Decrease != 0, 
                    label=paste("-",Decrease, sep = ""), 
                    hjust = 1.1, vjust = 1.5),
                size=4, color = "olivedrab4")+
